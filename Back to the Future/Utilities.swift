@@ -36,5 +36,11 @@ open class Utilities {
         
     }
     
+    func getRandomYear() -> String {
+        return  String(arc4random_uniform(8999) + 1000)
+        
+        
+    }
+    
     
 }

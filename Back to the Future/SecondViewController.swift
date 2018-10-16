@@ -29,8 +29,19 @@ class SecondViewController: UIViewController {
     }
 
     @IBAction func buttonClicked(_ sender: Any) {
-    
+        updatingLabelView()
+        
     }
+    
+    func updatingLabelView() {
+        let utils = Utilities()
+        let year = utils.getRandomYear()
+        labelOne.text = utils.getLetterAtIndex(str: year, location: 0)
+        labelTwo.text = utils.getLetterAtIndex(str: year, location: 1)
+        labelThree.text = utils.getLetterAtIndex(str: year, location: 2)
+        labelFour.text = utils.getLetterAtIndex(str: year, location: 3)
+    }
+    
     
     
 } //end SecondViewController class
