@@ -31,6 +31,7 @@ class SecondViewController: UIViewController {
     @IBAction func buttonClicked(_ sender: Any) {
         updatingLabelView()
         
+        
     }
     
     func updatingLabelView() {
@@ -40,8 +41,23 @@ class SecondViewController: UIViewController {
         labelTwo.text = utils.getLetterAtIndex(str: year, location: 1)
         labelThree.text = utils.getLetterAtIndex(str: year, location: 2)
         labelFour.text = utils.getLetterAtIndex(str: year, location: 3)
+        addingAnimationToLabels(duration: 0.5, delay: 0.0, object: labelOne)
+        addingAnimationToLabels(duration: 0.5, delay: 0.2, object: labelTwo)
+        addingAnimationToLabels(duration: 0.5, delay: 0.4, object: labelThree)
+        addingAnimationToLabels(duration: 0.5, delay: 0.6, object: labelFour)
+        
     }
     
+    
+    func addingAnimationToLabels(duration: Double, delay: Double, object: UIView) {
+        UIView.animate(withDuration: duration, delay: delay, options: .curveEaseOut, animations: {
+            object.center.x += self.view.bounds.width
+            
+        }) { (true) in
+            
+        }
+        
+    } // end addingAnimationToLabels func
     
     
 } //end SecondViewController class
