@@ -65,7 +65,7 @@
                                 <color key="textColor" red="0.49063824449999999" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mb-De-d6R">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mb-De-d6R">
                                 <rect key="frame" x="115" y="397" width="142" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="142" id="gcM-dd-dh8"/>
@@ -75,7 +75,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.20689506073060759" blue="0.15742702715260837" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2sx-8C-eEt" firstAttribute="top" secondItem="ZuL-Ua-MdK" secondAttribute="top" id="0on-Xi-Z9V"/>
                             <constraint firstItem="Tc7-P2-aqI" firstAttribute="top" secondItem="ZuL-Ua-MdK" secondAttribute="top" id="82X-UQ-zdD"/>

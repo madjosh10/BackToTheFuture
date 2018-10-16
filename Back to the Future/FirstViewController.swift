@@ -17,9 +17,7 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     
     var timer = Timer()
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,12 +29,20 @@ class FirstViewController: UIViewController {
         labelFour.text = Utilities().getLetterAtIndex(str: year, location: 3)
         
         self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(FirstViewController.Tick), userInfo: nil, repeats: true)
+        Tick()
+        
+        
+        
     }
     
     func Tick() {
         timeLabel.text = Utilities().getCurrentTime()
-        
-        
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: .curveEaseOut, animations: {
+            self.view.alpha = 0.5
+            
+        }) { (true) in
+            self.view.alpha = 1.0
+        }
     }
     
 
